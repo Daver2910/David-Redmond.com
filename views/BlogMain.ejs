@@ -1,0 +1,47 @@
+<% include Partials/header%>
+
+<div id="blog-hero">
+  <div id="hero-overlay">
+    <aside id="blog-hero-text" >
+      <h2>Articles</h2>
+<br>
+<p>Here are list of some of the articles I wrote which come directly from my notes as I am learning to code in all the many languages and frameworks. I try to make this as clear as possible but generally it's all from my own purposes.</p>
+<br>
+<p>If you have any questions please send me an email or write to me on social media. I will try my best to get back to you and help you as many others have helped me.</p>
+<br>
+<p>Good luck coding! Never give up, you will find the answer :)</p>
+<br>
+    </aside>
+  </div>
+</div>
+<div class="container-fluid"><!-- contains banner img bg.-->
+    <div class="row">
+<br>
+<br>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+{% if all_posts%}
+		{% for post in all_posts %}
+		<div class="col-md-4">
+			<div class="card-group"><a href="{% url 'blog:detail' post.id%}">
+				<div class="card">
+					<img class="card-img-top thumbnail img-card" src="{{ post.post_picture }}" alt="image">
+					<div class="card-title text-left"><h3>{{ post.post_title}}</h3></div>
+					<div class="card-text"><p>{{ post.post_subject }}</p></div>
+				</div>
+			</a></div>
+		</div>
+		{% endfor %}
+{% else %}
+ 	<h2>There are no Posts at the moment.</h2>
+ 	<p><a href="#">Click here</a> to go back</p>
+{% endif %}
+</div>
+{% endblock %}
+
+</div>
+</div>
+</div>
+<% include Partials/footer %>

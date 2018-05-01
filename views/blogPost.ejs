@@ -1,0 +1,24 @@
+<% include Partials/header %>
+{% block title %}{{ post.post_title}}{% endblock %}
+{% block body %}
+<div class="container">
+	<div>
+		<img class="post-image" src="{{ post.post_picture}}" alt="Web developer">
+	</div>
+	<div class="row ">
+		<div class="col-md-12 article-head">
+			<h3>Title: {{ post.post_title}}</h3>
+			<h5>Author: {{ post.post_author}}</h5>
+		</div>
+		<hr>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8 articles">
+			<p class="text">{{post.post_text_body}}</p>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+		<hr>
+</div>
+
+<% include Partials/footer %>

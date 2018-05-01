@@ -1,0 +1,41 @@
+<% include Partials/header%>
+
+
+
+<div class="container-fluid"> <!--contains white space bg-->
+    <h1 class="header spacer-50">WEBSITES</h1>
+    <div class="row">
+        <div class="col-md-4 portfolioImg">
+            <div id="ET" onmouseover="detailsOn(ET)" onmouseleave="detailsOff(ET)">
+                <div class="portOverflow" id="portET">
+                    <h2>Effective Thesis</h2>
+                    <h4>Effective Thesis was a remote project I have worked on and continue to do so. Effective Thesis a volunteer group based in Prague, CZ. I was engaged to improve the frontend of the website to provide a more user friendly experience. I started by making the website responsive - meaning that the page will adapt and change layout depending on the size of the device screen. This involved Javascript vanilla, Bootstrap, Git and Github since we were working remotely. The website is built on Django, a Python framework.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 portfolioImg">
+            <div id="random" onmouseover="detailsOn(random)" onmouseleave="detailsOff(random)">
+                <div class="portOverflow" id="portRandom">
+                    <h2>Random Quote Machine</h2>
+                    <h4>This is a zipline project for Free Code Camp to show the use of Javascript and APIs. It's a basic website created and designed by me, that produces a random quote from a famous historial figure. When the user presses a button a request is sent to a database on a different website and a new quote is sent back to the user. They then have the option to get another quote or share it on Facebook or Twitter. It uses Javascript and APIs.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 portfolioImg">
+            <div id="lotto" onmouseover="detailsOn(lotto)" onmouseleave="detailsOff(lotto)">
+                <div class="portOverflow" id="portLotto">
+                    <h2>Lottery Number Generator</h2>
+                    <h4>The Lottery Number Generator was a practice project I developed. It is based on Javascript and randomly generates numbers inside a preset range, in this case 42. Numbers cannot be duplicated and they must be presented on screen in an exact location.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-50">
+    <h1 class="header spacer-50">GAMES & APPLICATIONS</h1></div>
+    <div class="row">
+    </div>
+</div>
+
+
+
+<% include Partials/footer%>

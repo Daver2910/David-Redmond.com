@@ -1,0 +1,20 @@
+{
+  "name": "expressportfolio",
+  "version": "1.0.0",
+  "description": "David's Portfolio built on express.js and node.je",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "David Redmond",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express-validator": "^5.1.2",
+    "express.js": "^1.0.0"
+  }
+}
