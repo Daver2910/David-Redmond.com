@@ -1,35 +1,30 @@
 <% include Partials/header %>
 
 <div id="myModal" class="modal">
-
-
-  <div class="modal-content">
-    <span id="modalX" class="close">&times;</span>
-            <form >
+    <div class="modal-content">
+            <span id="modalX" class="close">&times;</span>
+            <form method="POST" action="/">
               <h1 class="">I will reply within 24 hours, of call me on this number</h1>
               <div class="form-group">
                   <label>Name</label>
-                  <input type="name" class="form-control" placeholder="David is my name, What's yours?">
+                  <input name="name" class="form-control" placeholder="David is my name, What's yours?">
               </div>
               <div class="form-group">
                   <label>Email address</label>
-                  <input type="email" class="form-control" placeholder="david@david-redmond.com">
+                  <input name="email" class="form-control" placeholder="david@david-redmond.com">
               </div>
               <div class="form-group">
                   <label>Phone Number</label>
-                  <input type="Phone" class="form-control" placeholder="+48 574 532 754">
+                  <input name="phone" class="form-control" placeholder="+48 574 532 754">
               </div>
               <div class="form-group">
                   <label>Message</label>
-                  <textarea type="email" class="form-control" placeholder="Message me here, tell me about your offer or download my CV in the right bottom corner">
+                  <textarea name="message" class="form-control" placeholder="Message me here, tell me about your offer or download my CV in the right bottom corner">
                   </textarea>
               </div>
-              <div >
-                  <button id="sendBtn">SEND MESSAGE</button>
-                </div>
+              <div ><button type="submit" id="sendBtn">SEND MESSAGE</button></div>
             </form>
-  </div>
-
+          </div>
 </div>
 <div>
   <div id="hero">
@@ -41,7 +36,6 @@
       <button class="" type="button" onmouseover="mouseOver()" onmouseleave="mouseLeave()" onclick="hireMe()" id="hero-button">HIRE ME!</button>
   </div>
 </div>
-
 <div class="container-fluid"><!-- contains banner img bg.-->
     <div class="row about-box">
       <div class="col-lg-4 profile-pic">
@@ -49,13 +43,11 @@
         </div>
         <div class="col-lg-8">
             <h1>ABOUT ME</h1>
-
           <h4>Hi, welcome to my site. there is lots to see so have a look around.</h4>
             <br>
           <p>I am David, I'm a web developer living and working in Warsaw, Poland, but I'm originally from Ireland. At the moment, I work for  large electronics company working on UX/UI.</p>
           <p>I'm an avid cyclist, I have an amazing fiancee and I love working on the front and back end of websites.</p>
           <p>I am constantly learning new languages, frameworks, skills to improve my abilities and keeping up-to-date on the latest trends.</p>
-
           <p>Bootstrap, Django, Javascript, jQuery are the main languages and frameworks I use to build sites, but I am constantly expanding. I love programming and I am currently pursuiting a Computer Science degree.</p>
           <p>For more information please contact me below.</p>
           <p>or send me an <a href="mailto:mail.davidredmond@gmail.com"> email</a> and we can discuss your project.</p>
@@ -68,15 +60,11 @@
 </div>
 <br><br><br><br>
 <!-- below is the portfolio code-->
-
-
 <div class="container-fluid bg01"> <!--contains white space bg-->
     <Div class="container">
       <div class="row spacer-100">
         <h1 class="header">PORTFOLIO</h1>
       </div>
-
-
   <div class="row spacer-50">
       <div class="col-md-4 H435">
           <div class="client-sites">
@@ -111,7 +99,6 @@
   </div>
       <br>
       <br>
-
       <div id="frame" class="row">
         <div class="col-md-6">
               <h1 id="left30" class="black">GET IN TOUCH</h1>
@@ -119,26 +106,26 @@
         </div>
           <div class="col-md-5">
             <h1 class="black">DO IT NOW!</h1>
-            <form >
+            <form action="/" method="POST">
               <div class="form-group">
                   <label>Name</label>
-                  <input type="name" class="form-control" placeholder="John Doe">
+                  <input name="name" class="form-control" placeholder="John Doe">
               </div>
               <div class="form-group">
                   <label>Email address</label>
-                  <input type="email" class="form-control" placeholder="name@example.com">
+                  <input name="email" class="form-control" placeholder="name@example.com">
               </div>
               <div class="form-group">
                   <label>Phone Number</label>
-                  <input type="Phone" class="form-control" placeholder="+48 555 555 555">
+                  <input name="phone" class="form-control" placeholder="+48 555 555 555">
               </div>
               <div class="form-group">
                   <label>Message</label>
-                  <textarea type="email" class="form-control" placeholder="Write your message here">
+                  <textarea name="message" class="form-control" placeholder="Write your message here">
                   </textarea>
               </div>
               <div >
-                  <button class="submit-btn">Submit</button>
+                  <button type="submit" class="submit-btn">Submit</button>
               </div>
             </form>
 
