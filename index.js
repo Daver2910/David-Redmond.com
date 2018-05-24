@@ -51,7 +51,7 @@ app.post('/', (req, res)=>{
     res.render( "base", {
       title : "David Redmond Web Developer"
     });
-    
+
   let output =`<h4>You have a new message from the contact form</h4>
   <ul>
     <li>Name : ${req.body.name}</li>
@@ -117,7 +117,7 @@ app.get('/blog', function(req, res) {
     res.render('blogMain', {      title: "Helpful Articles"} );
 });
 
-
-app.listen('8000', function(){
+const Port = process.env.PORT || 8000;
+app.listen(Port, function(){
   console.log('Portfolio Server Running on Port 8000');
 });
