@@ -1,59 +1,64 @@
 <% include Partials/header %>
 
-
-<div class="container"><!-- contains banner img bg.-->
-    <div class="row">
-
-        <div class="aboutBox">
-          <h4>I am David Redmond, a developer living in Warsaw, Poland.</h4>
-            <br>
-          <p>I'm originally from Ireland, I moved to Poland in 2012 and I began testing Microsoft applications for a software testing company. I started a successful business and at the moment, I work for Samsung R&D where I work on UX/UI.</p>
-
-          <p>I'm an avid cyclist, There is nothing better than a sunny day spent in the saddle. I learnt to swim a few months ago and I plan to compete in a triathlon next year.
-          I have an amazing partner, Varvara (Yes, V's not B's) whom I will marry very soon!</p>
-          <p>I love building websites, web apps and games.</p>
-          <p>I am constantly learning new languages, frameworks, skills to improve my abilities and keeping up-to-date on the latest trends.</p>
-          <br>
-          <br>
-          <br>
-
-          <h4>Languages, Frameworks & Tools</h4>
-          <br>
-          <h6><b>Languages</b></h6>
-          <p>HTML5, CSS3, JavaScript, Python and Git.</p>
-          <br>
-          <h6><b>Frameworks & Libraries</b></h6>
-          <p>Bootstrap, Django, jQuery</p>
-          <br>
-          <h6><b>Tools</b></h6>
-          <p>Gitbash, GitHub, Command line, Sass, amoung others</p>
-          <p>I am constantly expanding. I love programming and I am currently pursuiting a Computer Science degree. We can discuss your project.</p>
-          <br>
-          <br>
-          <br>
-
-          <h4>Training</h4>
-          <br>
-          <p>I have always been writing small programs and editing website in wordpress and other small personal projects.</p>
-          <p>In 2016, The English language school I was a part-owner of needed a new website. This projects, and the constant updating of forced me to start seriously learning to code.</p>
-          <p>This is when I started the FreeCodeCamp Front end developer course. My training continued with various online courses as seen below.
-            Finally, I am currently pursuiting a <b><em>Computer Science degree</em></b> which I hope to complete in 2020.</p>
-          <p>We can discuss your project.</p>
-
-          <h3>There is lots to see so have a look around.</h3>
-        </div>
-        <div class="col-md-3 certs">
-          <img class="img-responsive" src="https://i.imgur.com/q2LyEww.png" alt="">
-        </div>
-        <div class="col-md-3 certs">
-        <img class="img-responsive" src="https://i.imgur.com/DatQjO3.png">
-      </div>
-      <div class="col-md-3 certs">
-        <img class="img-responsive" src="https://i.imgur.com/Vvh7eDd.png">
-      </div><div class="col-md-3 certs">
-        <img class="img-responsive" src="https://i.imgur.com/gjhiyO0.png">
-      </div>
+<div class="container "><!-- contains banner img bg.-->
+  <div class="row about__page">
+    <img class="about__picture" src="/media/images/profile.jpg" alt="Web Developer profile"/>
+    <div class="about__bio">
+      <h2>David Redmond</h2>
+      <p>Current location: Warsaw Poland</p>
+      <p>Tel: +48 574 532 875</p>
+      <p>Email: mail.davidredmond@gmail.com</p>
     </div>
-</div> <!-- end of banner img bg -->
+
+    <div class="about__personal">
+      <p>I'm originally from Ireland, I moved to Poland in 2012 and I began testing Microsoft applications for a software testing company. I started a successful business and at the moment, I work for Samsung R&D where I work on UX/UI. I'm an avid cyclist, There is nothing better than a sunny day spent in the saddle. I learnt to swim a few months ago and I plan to compete in a triathlon next year.
+        I have an amazing partner, Varvara (Yes, V's not B's) whom I will marry very soon! I love building websites, web apps and games. I am constantly learning new languages, frameworks, skills to improve my abilities and keeping up-to-date on the latest trends.</p>
+    </div>
+    <div class="about__skills">
+      <h3>Languages, Frameworks & Tools</h3>
+
+      <h4><b>Languages</b></h4>
+      <p>HTML5, CSS3, JavaScript, Python and Git.</p>
+
+      <h4><b>Frameworks & Libraries</b></h4>
+      <p>Bootstrap, Django, jQuery</p>
+
+      <h4><b>Tools</b></h4>
+      <p>Gitbash, GitHub, Command line, Sass, amoung others</p>
+      <p>I am constantly expanding. I love programming and I am currently pursuiting a Computer Science degree. We can discuss your project.</p>
+
+    </div>
+    <div class="about__education">
+      <h3>Training</h3>
+      <p>I have always been writing small programs and editing website in wordpress and other small personal projects.</p>
+      <p>In 2016, The English language school I was a part-owner of needed a new website. This projects, and the constant updating of forced me to start seriously learning to code.</p>
+      <p>This is when I started the FreeCodeCamp Front end developer course. My training continued with various online courses as seen below.
+                  Finally, I am currently pursuiting a <b><em>Computer Science degree</em></b> which I hope to complete in 2020.</p>
+      <p>We can discuss your project.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <h2 class="text-center">Qualifications</h2>
+    <div class="cert__group">
+        <div class="about__certFrame">
+          <img class="about__certImage" src="https://i.imgur.com/q2LyEww.png" alt="SoloLearn CSS Certificate">
+          <caption>CSS Certificate from SoloLearn</caption>
+        </div>
+        <div class="about__certFrame">
+          <img class="about__certImage"src="https://i.imgur.com/DatQjO3.png" alt="SoloLearn HTML Certificate">
+          <caption>HTML Certificate from SoloLearn</caption>
+        </div>
+        <div class="about__certFrame">
+          <img class="about__certImage"src="https://i.imgur.com/Vvh7eDd.png" alt="SoloLearn JavaScript Certificate">
+          <caption>JavaScript Certificate from SoloLearn</caption>
+        </div>
+        <div class="about__certFrame">
+          <img class="about__certImage"src="https://i.imgur.com/gjhiyO0.png" alt="Udemy Basic JavaScript Certificate">
+          <caption>JavaScript Certificate from Udemy.com</caption>
+        </div>
+      </div>
+  </div>
+</div>
 
 <% include Partials/footer %>

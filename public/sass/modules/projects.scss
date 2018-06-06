@@ -1,0 +1,122 @@
+/* ------------ Portfolio page ------------ */
+.portfolio-section__title{
+	margin: 15vh auto 5vh;
+	color: $accentColor;
+}
+.projects__frame{
+	margin: auto;
+}
+.project__card{
+		padding: 10px;
+}
+.project__image{
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top:0;
+	bottom: 0;
+}
+#ET{
+	background-image: url("https://i.imgur.com/JHwQg14.png");
+}
+#lotto{
+	background-image: url("https://i.imgur.com/OxZ4UCI.png");
+}
+#random{
+	background-image: url("https://i.imgur.com/Gt10KBq.png");
+}
+.project__overlay{
+		text-align: center;
+		pointer-events: none;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		display: none;
+		background-color: rgba(10,231,236, 0.9);
+}
+.project__title{
+	color: $bg-cMain;
+	text-align: justify;
+	padding: 30px;
+	text-decoration: none;
+	text-indent: 8px;
+}
+.profile__description{
+	color: $bg-cMain;
+	text-align: justify;
+	padding: 30px;
+	text-decoration: none;
+	text-indent: 8px;
+}
+/* ------------ Portfolio MainPage ---------------*/
+
+.portfolio__title{
+	color: $accentColor;
+}
+.portfolio__item{
+	margin: 10px auto;
+	width: 90%;
+	padding: 5px;
+	border: 1px solid $accentColor;
+}
+.portfolio__image{
+	width: 100%;
+	margin: auto;
+}
+.portfolio__card{
+	margin:auto;
+	margin-top: 5px;
+	padding: 5px;
+	flex: 1;
+}
+.portfolio__cardTitle{
+	padding: 5px;
+	color: inherit;
+}
+.portfolio__cardText{
+	text-decoration: none;
+	color: inherit;
+}
+.portfolio__cardCode{
+	padding: 5px;
+	color: inherit;
+	text-align: center;
+	font-weight: bold;
+}
+.portfolio__card--blue{
+		background-color: $accentColor;
+		color: $overlayBlack;
+}
+.portfolio__card--grey{
+	background-color: $overlayBlack;
+	color: $textColorInverted;
+}
+.portfolio__card--black{
+	background-color: $bg-cMain;
+	color: $accentColor;
+}
+
+@media only screen and (min-width: 768px){
+	.portfolio__frame{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: auto;
+	}
+	.portfolio__item{
+		float: left;
+		width: 45%;
+		margin: 20px 1.5%;
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+@media only screen and (min-width: 990px){
+	.portfolio__item{
+		width: 30%;
+	}
+}

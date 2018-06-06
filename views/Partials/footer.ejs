@@ -1,137 +1,30 @@
 <div class="container">
 	<div class="row">
-		<FOOTER class="col-md-12">
-
-			<H5>Copyright 2018 David Redmond&copy</H5>
-		</FOOTER>
+		<footer class="footer">
+			<p class="footer__copyText">Copyright 2018 David Redmond&copy</p>
+		</footer>
 	</div>
 </div>
-
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9jngMdmrnzpXBfIB5DwvedE-FkQ1LvPo&callback=initMap"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascript/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9jngMdmrnzpXBfIB5DwvedE-FkQ1LvPo&callback=initMap"></script>
 <script type="text/javascript">
-	window.onload = function(){
-
-		function initMap() {
-        var location = {lat: 52.231582, lng: 21.001778};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: location
-        });
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map
-        });
-}
-
-
-initMap();
-
-};
-
-
-var pic01 = document.getElementById('pic01');
-var pic02 = document.getElementById('pic02');
-var pic03 = document.getElementById('pic03');
-var profPic = document.getElementById('profile-pic');
-var mainBtn = document.getElementById('hero-button');
-var modal = document.getElementById('myModal');
-
-
-
-function mouseOver(){
-	mainBtn.style.paddingLeft = '100px';
-	mainBtn.style.paddingRight = '100px';
-	mainBtn.style.paddingTop = '25px';
-	mainBtn.style.paddingBottom = '25px';
-	mainBtn.style.marginTop = '25px';
-	mainBtn.style.backgroundColor ='#3dfafe';
-};
-
-function mouseLeave(){
-	mainBtn.style.paddingLeft = '80px';
-	mainBtn.style.paddingRight = '80px';
-	mainBtn.style.paddingTop = '15px';
-	mainBtn.style.paddingBottom = '15px';
-	mainBtn.style.marginTop = '35px';
-	mainBtn.style.backgroundColor ='#0AE7EC';
-	mainBtn.innerHTML = "HIRE ME!";
-}
-
-function hireMe(){
-	modal.style.display ='block';
-};
-
-
-function lookRight(){
-	profPic.src="https://i.imgur.com/iITIgcv.jpg";
-}
-
-function lookLeft(){
-	profPic.src="https://i.imgur.com/pHmcXEg.jpg";
-}
-
-function tracker(e){
-	var x = e.clientX;
-    var y = e.clientY;
-    var coor = "Coordinates: (" + x + "," + y + ")";
-    if (x<320){
-    	lookLeft();
-    }
-    else {
-    	lookRight();
-    }
-}
-
-
-
+//Declaration of Google Maps API
+			function initMap() {
+					const location = {lat: 52.231582, lng: 21.001778};
+					const map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 16,
+						center: location
+					});
+					const marker = new google.maps.Marker({
+						position: location,
+						map: map
+					});
+		}
+//Calling Google Maps
+		initMap();
 </script>
-<script>
 
-var span =document.getElementById('modalX');
-
-span.onclick= function() {
-	modal.style.display = 'none'
-}
-
-</script>
-<script>
-
-var lotto = document.getElementById('lotto');
-var lottoOv = document.getElementById('portLotto');
-var random = document.getElementById('random');
-var randomOv = document.getElementById('portRandom');
-var ET = document.getElementById('ET');
-var ETOv = document.getElementById('portET');
-
-
-function detailsOn(x){
-	if(x == lotto){
-		lottoOv.style.display= 'table';
-	}
-	else if(x == random){
-		randomOv.style.display= 'table';
-	}
-	else if(x == ET){
-		ETOv.style.display= 'table';
-	}
-}
-
-
-function detailsOff(x){
-	if(x == lotto){
-		lottoOv.style.display= 'none';
-	}
-	else if(x == random){
-		randomOv.style.display= 'none';
-	}
-	else if(x == ET){
-		ETOv.style.display= 'none';
-	}
-}
-
-</script>
 </body>
 </html>
