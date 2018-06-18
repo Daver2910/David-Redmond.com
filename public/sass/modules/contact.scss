@@ -1,0 +1,82 @@
+
+/***************   CONTACT STYLES   ***************/
+.contact__tagLine{
+}
+.contact__socialMedia{
+}
+.contact__icons {
+	display:block;
+	margin: 10px;
+	padding:15px;
+	a {
+		font-family: raleway;
+		text-decoration: none;
+		color: $textColorMain;
+	}
+}
+.contact__icons:hover{
+	background-color: $accentColor;
+}
+.contact__icons--facebook { background-color: #4267B2;}
+.contact__icons--twitter { background-color: #55ACEE;}
+.contact__icons--linkedin { background-color: #0077B5;}
+.contact__icons--ffc { background-color: #006400;}
+.contact__icons--github { background-color: #24292E;}
+.contact__icons--codepen { background-color: #000000;}
+.contact__icons--gmail { background-color: #D14130;}
+
+@media only screen and (min-width: 768px){
+	.contact__socialMedia{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.contact__icons{
+		width: 45vw;
+	}
+}
+@media only screen and (min-width: 990px){
+	.contact__icons{
+		width: 30vw;
+	}
+}
+/*--------- ContactMainPage ---------------*/
+
+.contact__box{
+	border: 1px solid $accentColor;
+	background-color: $bg-cBox;
+	padding-bottom: 30px;
+	margin: 10px auto 30px;
+}
+.contact__box--raised{
+	margin: -500px auto 30px;
+}
+.contact__title{
+	color: $bg-cMain;
+	text-transform: uppercase;
+}
+.icons-home {
+	display:inline;
+	margin-x: auto;
+	margin-left: 30px;
+	padding:15px;
+	a {
+		font-family: raleway;
+		text-decoration: none;
+		color: $textColorMain;
+	}
+}
+.form-control{
+	border: solid 1px $bg-cBox;
+	border-radius: 0px;
+}
+.form__submit {
+		color: $bg-cMain;
+		background-color: $accentColor;
+		margin: 5px;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: none;
+}

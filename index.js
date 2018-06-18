@@ -1,13 +1,3 @@
-/*
-1 - Setup all the const using require - express.js - this is the main app
-                                        bodyParser - this is a type of middleware to parse some commands
-                                        path - this is required to direct express to folders and files.
-                                        app - this is the express() function: its will allow you to access other methods in the express framework
-                                        expressValidator - this is only used to validate forms.
-2 - Set ejs as the app 'view engine' and then set the pathto views.
-3 - Setup the public folder for images, .JS and CSS files
-4 - Setup middleware for bodyParser and expressValidator
-*/
 const express = require('express');
 const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
@@ -47,12 +37,9 @@ app.use(expressValidator({
 
 
 // Nodemailer Setup!
-app.post('/', (req, res)=>{
-    res.render( "base", {
-      title : "David Redmond Web Developer"
-    });
-    
-  let output =`<h4>You have a new message from the contact form</h4>
+app.post('/form', (req, res)=>{
+  console.log(`${req.body.name} / ${req.body.email} / ${req.body.phone} / ${req.body.message}`);
+ let output =`<h4>You have a new message from the contact form</h4>
   <ul>
     <li>Name : ${req.body.name}</li>
     <li>Email : ${req.body.email}</li>
@@ -64,12 +51,13 @@ app.post('/', (req, res)=>{
       nodemailer.createTestAccount((err, account) => {
           // create reusable transporter object using the default SMTP transport
           let transporter = nodemailer.createTransport({
-              host: 'smtp.david-redmond.com',
-              port: 587,
-              secure: false, // true for 465, false for other ports
+              //host: 'smtp.david-redmond.com',
+              //port: 587,
+              //secure: false, // true for 465, false for other ports
+              service : 'gmail',
               auth: {
-                  user: '1234@david-redmond.com', // generated ethereal user
-                  pass: 'Dave3208!' // generated ethereal password
+                  user: 'contactFormDavid@gmail.com', // generated ethereal user
+                  pass: 'P!zza123' // generated ethereal password
               },
               tls: {
                 rejectUnauthorized: false
@@ -77,9 +65,9 @@ app.post('/', (req, res)=>{
             });
           // setup email data with unicode symbols
           let mailOptions = {
-              from: '"Node Application" <1234@david-redmond.com>', // sender address
+              from: '"Portfolio Website" <mail.davidredmond@gmail.com>', // sender address
               to: 'mail.davidredmond@gmail.com', // list of receivers
-              subject: '*** NEW contact from Website***', // Subject line
+              subject: `* NEW message from ${req.body.name}`, // Subject line
               text: 'Hello world?', // plain text body
               html: output // html body - this is the var created above
           };
@@ -88,36 +76,33 @@ app.post('/', (req, res)=>{
             if (error) {
                 return console.log(error);
             }
-            console.log('Message sent: %s', info.messageId);
-            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-            res.render("base", {      title: "David Redmond Web Developer"} );
-
-
+            
             // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
             // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
             });
         });
+        res.redirect('/');
 });
 
-//
 // VIEWS  and URL Directions
 app.get('/', function(req, res) {
-    res.render('base', {      title: "David Redmond Web Developer"} );
+    res.render('base', { title: "David Redmond Web Developer" });
 });
 app.get('/portfolio', function(req, res) {
-    res.render('portfolio', {      title: "David Redmond Portfolio"} );
+    res.render('portfolio', { title: "David Redmond Portfolio" });
 });
 app.get('/about', function(req, res) {
-    res.render('about', {      title: "David Redmond About me"} );
+    res.render('about', { title: "David Redmond About me" });
 });
 app.get('/contact', function(req, res) {
-    res.render('contact', {      title: "David Remdond Contact Me"} );
+    res.render('contact', { title: "Contact David Redmond" });
 });
 app.get('/blog', function(req, res) {
-    res.render('blogMain', {      title: "Helpful Articles"} );
+    res.render('blogMain', { title: "Helpful Articles" });
 });
 
 
-app.listen('8000', function(){
+const Port = process.env.PORT || 8000;
+app.listen(Port, function(){
   console.log('Portfolio Server Running on Port 8000');
 });

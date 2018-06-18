@@ -1,0 +1,18 @@
+
+/***************   BODY STYLES   ***************/
+body{
+		font-family: $font-stack;
+		background-color: $bg-cMain;
+		color: $text__color--light;
+		max-width: 1700px;
+		margin: auto;
+}
+a a:hover a:visited a:link a:focus{
+	background-color: transparent;
+	text-decoration: none;
+  cursor: pointer;
+}
+.body--transition {
+	background-color: $bg-cInverted;
+	z-index: 0;
+}
