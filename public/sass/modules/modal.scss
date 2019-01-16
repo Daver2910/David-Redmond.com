@@ -1,5 +1,6 @@
 .modal{
     display: hidden;
+    color: #000000;
     position: fixed;
     z-index: 4;
     left: 0;
@@ -53,7 +54,7 @@
 }
 @media only screen and (min-width: 768px){
   .modal__content{
-      margin: 10% 20%;  
+      margin: 10% 20%;
       height: auto;
       width: 60%;
   }

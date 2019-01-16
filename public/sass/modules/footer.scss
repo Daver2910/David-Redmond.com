@@ -1,5 +1,8 @@
 .footer {
-	}
-.footer__copyText{
+	background-color: $footerBg;
+	width: 100%;
+	height: 120px;
+	&__copyText{
 		text-align: center;
 	}
+}

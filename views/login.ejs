@@ -1,0 +1,13 @@
+<h1>Login Page</h1>
+<form action="/login" method="POST">
+    <label for="email">login</label>
+    <% if (locals.user) {%>
+        <input type="text" name="email" id="email" value="user.email">
+    <% } else {%>
+        <input type="text" name="email" id="email">
+    <% } %>
+    <label for="password">password</label>
+    <input type="text" name="password">
+    <button>Submit</button>
+</form>
+

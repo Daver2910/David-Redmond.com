@@ -1,78 +1,13 @@
-<% include Partials/header%>
-
+<% include Partials/header %>
 <div class="container-fluid">
-  <h1 class="portfolio-section__title">WEBSITES</h1>
+  <h1 class="portfolio-section__title"><%= $t.portfolio.header %></h1>
       <div class="row portfolio__frame">
-        <div class="portfolio__item">
-            <a href="http://effectivethesis.com/" target="_blank"><img class="portfolio__image"  src="/media/images/effectiveThese.png"  alt="placeholder"></a>
-          <div class=" portfolio__card portfolio__card--blue">
-            <h2 class="portfolio__cardCode"><a href="https://github.com/ea-czech-republic/efektivnialtruismus.cz" target="_blank">View Code Here</a></h2>
-            <br>
-            <h4 class="portfolio__cardTitle"><a href="http://effectivethesis.com/" target="_blank">Effective Thesis</a></h4>
-            <p class="portfolio__cardText">Effective Thesis is a volunteer project to help student choose thesis topics that will impact more than just their studies. Based in Prague, CZ, they engaged me to improve the frontend of the website to provide a more user friendly experience. I started by making the website mobile responsive and applying bootstrap 4 to the front end. The website is built on Django, a Python framework. so it was a great experience working with the django framework.</p>
-          </div>
-        </div>
-        <div class="portfolio__item">
-            <a href="https://github.com/Daver2910/project_planner" target="_blank"><img class="portfolio__image"  src="/media/images/ProjectPlanner.png"  alt="placeholder"></a>
-          <div class=" portfolio__card portfolio__card--black">
-            <h2 class="portfolio__cardCode"><a href="https://github.com/Daver2910/project_planner" target="_blank">View Code Here</a></h2>
-            <br>
-            <h4 class="portfolio__cardTitle"><a href="#" target="_blank">Project Planner</a></h4>
-            <p class="portfolio__cardText">This app is a new take on the old to-do-list type applications. But this is the next level. I used node, express, handlebars and mongo to create this free interactive planning tool. Version 1.0.0 used bootstrap as a framework for the css. The remote database is stored on M-lab and the app is hosted on Heroku. Using passport.js and other packages I created secured pages that have access control. There are many more inprovemnts planned for V2.0.</p>
-            </div>
-        </div>
-        <div class="portfolio__item">
-            <a href="https://daver2910.github.io/PortfolioThemeTemplate/" target="_blank"><img class="portfolio__image"  src="/media/images/template01.png" alt="placeholder"></a>
-          <div class=" portfolio__card portfolio__card--grey">
-            <h2 class="portfolio__cardCode"><a href="https://github.com/Daver2910/PortfolioThemeTemplate" target="_blank">View Code Here</a></h2>
-            <br>
-            <h4 class="portfolio__cardTitle"><a href="#" target="_blank">Simple Profolio Template</a></h4>
-            <p class="portfolio__cardText">This portfolio page started as a practice project. It is based on the multiple bootstrap templates available on the internet. Its built totally on HTML5 and Bootstrap 4 and uses some basic jQuery to power the animation and actions. All the images were found on upsplash.</p>
-            </div>
-        </div>
-        <div class="portfolio__item">
-            <a href="/" target="_blank"><img class="portfolio__image"  src="/media/images/site screenshot.png" alt="placeholder"></a>
-          <div class=" portfolio__card portfolio__card--grey">
-            <h2 class="portfolio__cardCode"><a href="https://github.com/Daver2910/express.js-Portfolio" target="_blank">View Code Here</a></h2>
-            <br>
-            <h4 class="portfolio__cardTitle"><a href="#" target="_blank">david-redmond.com</a></h4>
-            <p class="portfolio__cardText">I know you are family with this site, I built it with an expressjs backend and EJS template engine. All the Javascript and SASS/CSS was written by me. There is some simple bootstrap classes used and I made use of the Google maps API. The contact forms are emailed directly to my email accunt using nodemailer.js Feel free to look at the code.</p>
-            </div>
-        </div>
-        <div class="portfolio__item">
-            <a href="https://daver2910.github.io/wikipedia_search_tool/" target="_blank"><img class="portfolio__image"  src="/media/images/wikipedia.png"  alt="placeholder"></a>
-          <div class=" portfolio__card portfolio__card--blue">
-            <h2 class="portfolio__cardCode"><a href="https://github.com/Daver2910/wikipedia_search_tool" target="_blank">View Code Here</a></h2>
-            <br>
-            <h4 class="portfolio__cardTitle"><a href="#" target="_blank">Wikipedia Search Tool</a></h4>
-            <p class="portfolio__cardText">Free Code Camp asks users to build basic apps from different APIs. This is a single pages site used to take a search term the user enters and then search wikipedia, and presents the results on reloaded page. The user can also get a random article to read as they wish. the google fonts and basic colors give the app a futuristic or scientific feel.</p>
-            </div>
-        </div>
-        <div class="portfolio__item">
-            <a href="https://codepen.io/DavidRedmond/full/dmrVLm/" target="_blank"><img class="portfolio__image"  src="/media/images/weatherApp.png" alt="placeholder"></a>
-          <div class=" portfolio__card portfolio__card--black">
-            <h2 class="portfolio__cardCode"><a href="https://codepen.io/DavidRedmond/pen/dmrVLm/" target="_blank">View Code Here</a></h2>
-            <br>
-            <h4 class="portfolio__cardTitle"><a href="#" target="_blank">Weather Application</a></h4>
-            <p class="portfolio__cardText">This is another zipline project for Free Code Camp to show the use of Javascript APIs, and DOM manipulation, The app access the users browser location and then makes a call to the OpenWeather.com API. theis then collects the weather data from the users location and returns it to the screen as the designer presents it.</p>
-            </div>
-        </div>
+
+          <% $t.portfolio.projects.forEach(project => { %>
+              <%- include('Partials/project', {project}); %>
+          <% }) %>
+
       </div>
     </div>
-<!-- Games and APPLICATIONS will be uploaded in V2.0 which should be released in Sept 2018
-    <h1 class="portfolio-section__title">GAMES & APPLICATIONS</h1>
-    <div class="row projects__frame">
-        <div class="row">
-          <div class="portfolio__item">
-              <a href="https://www.github.com/Daver2910" target="_blank"><img class="portfolio__image"  src="/media/images/wikipedia.png"  alt="placeholder"></a>
-            <div class=" portfolio__card portfolio__card--blue">
-              <h4 class="portfolio__cardTitle"><a href="http://effectivethesis.com/" target="_blank">Effective Thesis</a></h4>
-              <br>
-              <p class="portfolio__cardText">Effective Thesis was a remote project I have worked on and continue to do so. Effective Thesis a volunteer group based in Prague, CZ. I was engaged to improve the frontend of the website to provide a more user friendly experience. I started by making the website responsive - meaning that the page will adapt and change layout depending on the size of the device screen. This involved Javascript vanilla, Bootstrap, Git and Github since we were working remotely. The website is built on Django, a Python framework.</p>
-            </div>
-          </div>
-        </div>
-      </div>
--->
 
 <% include Partials/footer%>

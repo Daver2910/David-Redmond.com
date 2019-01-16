@@ -1,0 +1,4 @@
+@mixin animation($property, $inOut) {
+  transition-timing-function: $inOut;
+  transition: $property;
+}

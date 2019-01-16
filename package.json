@@ -4,7 +4,10 @@
   "description": "David's Portfolio built on express.js and node.je",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "sass": "node-sass -o static/css public/sass -w",
+    "start": "nodemon index.js",
+    "dev": "npm run sass && npm start",
+    "develop": "nodemon development"
   },
   "keywords": [
     "Portfolio"
@@ -12,10 +15,18 @@
   "author": "David Redmond",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "ejs": "^2.5.9",
     "express-validator": "^5.1.2",
     "express.js": "^1.0.0",
-    "nodemailer": "^4.6.4"
+    "mongoose": "^5.4.3",
+    "nodemailer": "^4.6.4",
+    "twig": "^1.12.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.11.0"
   }
 }

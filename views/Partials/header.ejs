@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en"/>
 <head>
-		<meta charset="utf-8"/>
-	<title><%= title %></title>
-	  <meta name="description" content="Web developer, full stack developer for hire."/>
-	  <meta name="keywords" content="web-dev, web developer, frontend, backend, fullstack, programmer"/>
-	  <meta name="author" content="David Redmond"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  	<link rel="icon" type="image/png" href="/media/images/DavidRedmond.ico"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+	<meta charset="utf-8"/>
+	<title><%= $t.title.home %></title>
+	<meta name="description" content="Web developer, full stack developer for hire."/>
+	<meta name="keywords" content="web-dev, web developer, frontend, backend, fullstack, programmer"/>
+	<meta name="author" content="David Redmond"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="icon" type="image/png" href="/images/DavidRedmond.ico"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 </head>
 <body>
-			<nav class="navMenu" id="menu">
-				 <button onclick="toggle()" class="navMenu__icon" type="button">
-					 <div class="navMenu__icon--bar" id="bar01"></div>
-					 <div class="navMenu__icon--bar" id="bar02"></div>
-					 <div class="navMenu__icon--bar" id="bar03"></div>
-				 </button>
-						<ul class="navMenu__list--hide navMenu__list" id="list">
-							<li class="navMenu__item  navMenu__item--active"><a href="/">HOME</a></li>
-							<li class="navMenu__item"><a href="/portfolio/">PORTFOLIO</a></li>
-							<li class="navMenu__item"><a href="/about/">ABOUT</a></li>
-							<li class="navMenu__item"><a href="/contact/">CONTACT</a></li>
-						</ul>
-			</nav>
+	<nav class="navbar" id="menu">
+		<ul class="navbar__list navbar__list--hide" id="list">
+			<li class="navbar__item  navbar__item--active"><a href="/"><%= $t.navbar.home.name %></a></li>
+			<li class="navbar__item"><a href="/portfolio/"><%= $t.navbar.portfolio.name %></a></li>
+			<li class="navbar__item"><a href="/about/"><%= $t.navbar.about.name %></a></li>
+			<li class="navbar__item"><a href="/blog/"><%= $t.navbar.blog.name %></a></li>
+			<li class="navbar__item"><a href="/contact/"><%= $t.navbar.contact.name %></a></li>
+		</ul>
+		<button onclick="toggleHome()" class="navbar__icon" type="button">
+			 <div class="navbar__icon--bar" id="bar01"></div>
+			 <div class="navbar__icon--bar" id="bar02"></div>
+			 <div class="navbar__icon--bar" id="bar03"></div>
+		 </button>
+	</nav>

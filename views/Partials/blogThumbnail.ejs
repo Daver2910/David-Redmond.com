@@ -1,0 +1,9 @@
+<div class="col-md-4">
+    <div class="card-group"><a href="{% url 'blog:detail' post.id%}">
+            <div class="card">
+                <img class="card-img-top thumbnail img-card" src="<%= post.img %>" alt="image">
+                <div class="card-title text-left"><h3><%= post.title %></h3></div>
+                <div class="card-text"><p><%= post.details %></p></div>
+            </div>
+        </a></div>
+</div>

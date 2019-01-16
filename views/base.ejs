@@ -1,127 +1,49 @@
 <% include Partials/header %>
 
-<div id="myModal" class="modal">
-  <div class="modal__content">
-    <span id="modalX" class="modal__closeBtn">&times;</span>
-    <form method="POST" action="/form">
-      <h1 class="modal__title">I will reply within 24 hours, of call me on this number</h1>
-      <div class="form-group">
-        <label>Name</label>
-        <input autocomplete="name" name="name" class="form-control" placeholder="David is my name, What's yours?">
-      </div>
-      <div class="form-group">
-        <label>Email address</label>
-        <input autocomplete="email" name="email" class="form-control" placeholder="david@david-redmond.com">
-      </div>
-      <div class="form-group">
-        <label>Phone Number</label>
-        <input autocomplete="phone" name="phone" class="form-control" placeholder="+48 574 532 754">
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea name="message" class="form-control" placeholder="Message me here, tell me about your offer or download my CV in the right bottom corner"></textarea>
-      </div>
-      <div>
-        <button class="modal__submit" type="submit" id="sendBtn">SEND MESSAGE</button>
-      </div>
-    </form>
-  </div>
-</div>
-<div>
-  <div id="hero" class=" hero__image hero__imageMain">
-    <div id="hero-overlay" class="hero__overlay">
-    </div>
-  </div>
-  <div id="hero-text" class="hero__content">
-    <h1 class="hero__text">NEED A WEB DEVELOPER?</h1>
-    <button class="hero__button" type="button" onmouseover="mouseOver()" onmouseleave="mouseLeave()" onclick="hireMe()" id="hero-button">HIRE ME!</button>
-  </div>
-</div>
+<% include Partials/modal %>
+
+<% include Partials/hero %>
 
 <div class="container">
   <div class="row profile__box">
     <div class="profile__picFrame">
-      <img class="img-responsive profile__picture" id="profile-pic" onmousemove="tracker(event)" src="/media/images/David-Sunglass-Left.jpg" alt="David's Face">
+      <img class="img-responsive profile__picture" id="profile-pic" onmousemove="tracker(event)" src="/images/David-Sunglass-Left.jpg" alt="David's Face">
     </div>
     <div class="profile__content">
-      <h1 class="profile__title">ABOUT ME</h1>
-      <h4 class="profile__tagLine">Hi, welcome to my site. there is lots to see so have a look around.</h4>
+      <h1 class="profile__title"><%= $t.home.aboutMe.header %></h1>
+      <h4 class="profile__tagLine"><%= $t.home.aboutMe.tagLine %></h4>
       <div class="profile__text">
-        <p>I am David, I'm a web developer living and working in Warsaw, Poland, but I'm originally from Ireland. At the moment, I work for  large electronics company working on UX/UI.
-          I'm an avid cyclist, I have an amazing fiancee and I love working on the front and back end of websites.
-          I am constantly learning new languages, frameworks, skills to improve my abilities and keeping up-to-date on the latest trends.
-          Bootstrap, Django, Javascript, jQuery are the main languages and frameworks I use to build sites, but I am constantly expanding. I love programming and I am currently pursuiting a Computer Science degree.
-          For more information please contact me below.
-          or send me an <a href="mailto:mail.davidredmond@gmail.com"> email</a> and we can discuss your project.</p>
+        <p><%= $t.home.aboutMe.text %></p>
       </div>
     </div>
     <div class="profile__baseline">
-      <h3 class="profile__contact profile__contact--left"><i class="fas fa-phone"></i>  +48 574 532 875</h3>
-      <h3 class="profile__contact profile__contact--right"><i class="fab fa-whatsapp"></i>  +48 574 532 875</h3>
+      <h3 class="profile__contact profile__contact--left"><i class="fas fa-phone"></i><%= $t.global.telephone %></h3>
+      <h3 class="profile__contact profile__contact--right"><i class="fab fa-whatsapp"></i><%= $t.global.telephone %></h3>
     </div>
-  </div> <!-- end of banner img bg -->
+  </div>
 </div>
 
-<!-- below is the portfolio code-->
-<div class="body--transition "> <!--contains white space bg-->
+<div class="body--transition ">
   <div class="container">
-    <h1 class="portfolio__title">PORTFOLIO</h1>
+    <h1 class="portfolio__title"><%= $t.home.highlightProjects.header %></h1>
     <div class="row portfolio__frame">
-      <div class="portfolio__item">
-          <a href="/portfolio/"><img class="portfolio__image"  src="/media/images/effectiveThese.png"  alt="placeholder"></a>
-        <div class=" portfolio__card portfolio__card--blue">
-          <br>
-          <h4 class="portfolio__cardTitle"><a href="http://effectivethesis.com/" target="_blank">Effective Thesis</a></h4>
-          <p class="portfolio__cardText">Effective Thesis is a volunteer project to help student choose thesis topics that will impact more than just their studies. Based in Prague, CZ, they engaged me to improve the frontend of the website to provide a more user friendly experience. I started by making the website mobile responsive and applying bootstrap 4 to the front end. The website is built on Django, a Python framework. so it was a great experience working with the django framework.</p>
-        </div>
-      </div>
-      <div class="portfolio__item">
-          <a href="/portfolio/"><img class="portfolio__image"  src="/media/images/ProjectPlanner.png"  alt="placeholder"></a>
-        <div class=" portfolio__card portfolio__card--black">
-          <br>
-          <h4 class="portfolio__cardTitle"><a href="https://github.com/Daver2910/project_planner" target="_blank">Project Planner</a></h4>
-          <p class="portfolio__cardText">This app is a new take on the old to-do-list type applications. But this is the next level. I used node, express, handlebars and mongo to create this free interactive planning tool. Version 1.0.0 used bootstrap as a framework for the css. The remote database is stored on M-lab and the app is hosted on Heroku. Using passport.js and other packages I created secured pages that have access control. There are many more inprovemnts planned for V2.0.</p>
-          </div>
-      </div>
-      <div class="portfolio__item">
-          <a href="/portfolio/"><img class="portfolio__image"  src="/media/images/template01.png" alt="placeholder"></a>
-        <div class=" portfolio__card portfolio__card--grey">
-          <br>
-          <h4 class="portfolio__cardTitle"><a href="https://daver2910.github.io/PortfolioThemeTemplate/" target="_blank">Simple Profolio Template</a></h4>
-          <p class="portfolio__cardText">This portfolio page started as a practice project. It is based on the multiple bootstrap templates available on the internet. Its built totally on HTML5 and Bootstrap 4 and uses some basic jQuery to power the animation and actions. All the images were found on upsplash.</p>
-          </div>
-      </div>
+
+        <% $t.home.highlightProjects.projects.forEach(project => { %>
+            <%- include('Partials/highlightedProject', {project}); %>
+        <% }) %>
+
     </div>
   </div>
 <div class="container">
   <div id="frame" class="row contact__box">
     <div class="col-sm-6">
-      <h1 class="contact__title">GET IN TOUCH</h1>
+      <h1 class="contact__title"><%= $t.global.getInTouch %></h1>
       <div id="map"></div>
     </div>
     <div class="col-sm-6">
-      <h1 class="contact__title">DO IT NOW!</h1>
-      <form name="mainBottom" method="POST" action="/form">
-        <div class="form-group">
-          <label>Name</label>
-          <input autocomplete="name" name="name" class="form-control" placeholder="John Doe">
-        </div>
-        <div class="form-group">
-          <label>Email address</label>
-          <input autocomplete="email" name="email" class="form-control" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input autocomplete="phone" name="phone" class="form-control" placeholder="+48 555 555 555">
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea name="message" class="form-control" placeholder="Write your message here"></textarea>
-        </div>
-        <div >
-          <button type="submit" class="form__submit">Submit</button>
-        </div>
-      </form>
+      <h1 class="contact__title"><%= $t.global.formTitle %></h1>
+        <% include Partials/form %>
+
     </div>
   </div>
 </div>

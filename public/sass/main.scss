@@ -15,11 +15,37 @@
 @import "modules/projects.scss";
 
 
+
 /***************   ALL TO BE SORTED OUT   ***************/
 #map {
 	width: 100%;
 	height: 363px;
 }
+
+.skillbox {
+	margin: 10px 0;
+	&__holder {
+		border: 1px solid blue;
+		padding: 5px 10px;
+	}
+	&__title {
+
+	}
+	&__progress {
+		background-color: #0AE7EC;
+		width: 100%;
+		height: 5px;
+		margin: 14px 0;
+		&--percent {
+			height: 5px;
+			background-color: #0077B5;
+		}
+	}
+	&__level {
+
+	}
+}
+
 /***************   BLOG STYLES    ***************/
 
 .card {

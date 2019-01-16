@@ -1,0 +1,16 @@
+<h1>Register Page</h1>
+<form action="/register" method="POST">
+    <label for="firstName">First name</label>
+    <input type="text" name="firstName" id="firstName">
+    <label for="surname">Surname</label>
+    <input type="text" name="surname" id="surname">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+    <label for="password">Password</label>
+    <input type="text" name="password">
+    <button>Submit</button>
+</form>
+
+<% if (error) {%>
+    <p><%= error %></p>
+<% } %>

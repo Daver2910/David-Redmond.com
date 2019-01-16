@@ -1,0 +1,22 @@
+
+<form name="mainBottom" method="POST" action="/form">
+    <div class="form-group">
+        <label><%= $t.global.name.label %></label>
+        <input autocomplete="name" oninput="nameValidate()" name="name" class="form-control" id="NameInput" placeholder="<%= $t.global.name.placeholder %>" required>
+    </div>
+    <div class="form-group">
+        <label><%= $t.global.email.label %></label>
+        <input autocomplete="email" name="email" class="form-control" placeholder="<%= $t.global.email.placeholder %>" required>
+    </div>
+    <div class="form-group">
+        <label><%= $t.global.phone.label %></label>
+        <input autocomplete="phone" name="phone" class="form-control" placeholder="<%= $t.global.phone.placeholder %>" required>
+    </div>
+    <div class="form-group">
+        <label><%= $t.global.message.label %></label>
+        <textarea name="message" class="form-control" placeholder="<%= $t.global.message.placeholder %>" required></textarea>
+    </div>
+    <div >
+        <button type="submit" class="form__submit"><%= $t.global.submit %></button>
+    </div>
+</form>

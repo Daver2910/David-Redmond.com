@@ -1,0 +1,373 @@
+{
+  "global": {
+    "dr": "David Redmond",
+    "location": "Warsaw Poland",
+    "telephone": "+48 574 532 875",
+    "myEmail": "mail.davidredmond@gmail.com",
+    "submit": "submit",
+    "clickHere": "Click here",
+    "toGoBack": "to go back",
+    "getInTouch": "get in touch",
+    "reasonsToTalk": "reasons to talk",
+    "formTitle": "do it now!",
+    "modalTitle": "I will reply within 24 hours, of call me on this number",
+    "name": {
+      "label": "name",
+      "placeholder": "John Doe"
+    },
+    "email": {
+      "label": "email",
+      "placeholder": "name@example.com"
+    },
+    "phone": {
+      "label": "phone number",
+      "placeholder": "+48 555 555 555"
+    },
+    "message": {
+      "label": "message",
+      "placeholder": "Write your message here"
+    },
+    "reasons": [
+      "Would you like to recruit me?",
+      "Do you need help with a project?",
+      "Would you like help learning to code?",
+      "Or maybe you want to write an article"
+    ]
+  },
+  "about": {
+    "location": "Current location:",
+    "telephone": "Tel:",
+    "email": "Email:",
+    "personal": "I'm originally from Ireland, I moved to Poland in 2012 and I began testing Microsoft applications for a software testing company. I started a successful business and at the moment, I work for Samsung R&D where I work on UX/UI. I'm an avid cyclist, There is nothing better than a sunny day spent in the saddle. I learnt to swim a few months ago and I plan to compete in a triathlon next year.\n        I have an amazing partner, Varvara (Yes, V's not B's) whom I will marry very soon! I love building websites, web apps and games. I am constantly learning new languages, frameworks, skills to improve my abilities and keeping up-to-date on the latest trends.\n     ",
+    "skills": {
+      "header": "Languages, Frameworks & Tools",
+      "languages": {
+        "title": "Languages",
+        "list": [
+          {
+            "name": "HTML5",
+            "pc": 93
+          },
+          {
+            "name":"CSS3",
+            "pc": 92
+          },
+          {
+            "name": "JavaScript",
+            "pc": 88
+
+          },
+          {
+            "name": "Python",
+            "pc": 65
+          },
+          {
+            "name": "Git",
+            "pc": 75
+          }
+        ]
+      },
+      "frameworks": {
+        "title": "Frameworks & Libraries",
+        "list": [
+          {
+            "name": "React",
+            "pc": 93
+          },
+          {
+            "name":"Redux",
+            "pc": 92
+          },
+          {
+            "name": "Vue",
+            "pc": 88
+
+          },
+          {
+            "name": "Vuex",
+            "pc": 65
+          },
+          {
+            "name": "nuxt",
+            "pc": 75
+          },
+          {
+            "name": "Angularjs",
+            "pc": 93
+          },
+          {
+            "name":"Bootstrap",
+            "pc": 92
+          },
+          {
+            "name": "Materialize",
+            "pc": 88
+
+          },
+          {
+            "name": "Django",
+            "pc": 65
+          },
+          {
+            "name": "jQuery",
+            "pc": 75
+          }
+        ]
+      },
+      "tools": {
+        "title": "Tools",
+        "list": [
+          {
+            "name": "Nodejs",
+            "pc": 65
+          },
+          {
+            "name": "SASS",
+            "pc": 75
+          },
+          {
+            "name": "SCSS",
+            "pc": 93
+          },
+          {
+            "name":"LESS",
+            "pc": 92
+          },
+          {
+            "name": "Gitbash",
+            "pc": 88
+
+          },
+          {
+            "name": "GitHub",
+            "pc": 65
+          },
+          {
+            "name": "Command line",
+            "pc": 75
+          }
+        ]
+      }
+    },
+    "training": {
+      "title": "Training",
+      "list": [
+        "I have always been writing small programs and editing website in wordpress and other small personal projects.",
+        "In 2016, The English language school I was a part-owner of needed a new website. This projects, and the constant updating of forced me to start seriously learning to code.",
+        "This is when I started the FreeCodeCamp Front end developer course. My training continued with various online courses as seen below.\n                  Finally, I am currently pursuiting a Computer Science degree which I hope to complete in 2020."
+      ]
+    },
+    "certs": {
+      "title": "Qualifications",
+      "list": [
+        {
+          "id": 1,
+          "title": "CSS Certificate from SoloLearn",
+          "img": "https://i.imgur.com/q2LyEww.png",
+          "imgAlt": "SoloLearn CSS Certificate"
+        },
+        {
+          "id": 2,
+          "title": "HTML Certificate from SoloLearn",
+          "img": "https://i.imgur.com/DatQjO3.png",
+          "imgAlt": "SoloLearn HTML Certificate"
+        },
+        {
+          "id": 3,
+          "title": "JavaScript Certificate from SoloLearn",
+          "img": "https://i.imgur.com/Vvh7eDd.png",
+          "imgAlt": "SoloLearn JavaScript Certificate"
+        },
+        {
+          "id": 4,
+          "title": "JavaScript Certificate from Udemy.com",
+          "img": "https://i.imgur.com/gjhiyO0.png",
+          "imgAlt": "Udemy Basic JavaScript Certificate"
+        }
+      ]
+    }
+  },
+  "title": {
+    "home": "David Redmond Web Developer",
+    "portfolio": "David Redmond Portfolio",
+    "about": "David Redmond About me",
+    "contact": "Contact David Redmond",
+    "blogMain": "Helpful Articles"
+  },
+  "navbar": {
+      "home": {
+          "name": "Home",
+          "link": "/"
+      },
+      "portfolio": {
+          "name": "portfolio",
+          "link": "/portfolio/"
+      },
+      "about": {
+          "name": "about",
+          "link": "/about/"
+      },
+      "contact": {
+          "name": "contact",
+          "link": "/contact/"
+      },
+    "blog": {
+      "name": "Blog",
+      "link": "/blog/"
+    }
+    },
+  "footer": {
+    "copyright": "Copyright",
+    "copyrightName": "David Redmond"
+  },
+  "home": {
+    "hero": {
+      "title": "NEED A WEB DEVELOPER?",
+      "button": "HIRE ME!"
+    },
+    "aboutMe": {
+      "header": "about me",
+      "tagLine": "Hi, welcome to my site. there is lots to see so have a look around.",
+      "text": "I am David, I'm a web developer living and working in Warsaw, Poland, but I'm originally from Ireland. At the moment, I work for  large electronics company working on UX/UI.\n          I'm an avid cyclist, I have an amazing fiancee and I love working on the front and back end of websites.\n          I am constantly learning new languages, frameworks, skills to improve my abilities and keeping up-to-date on the latest trends.\n          Bootstrap, Django, Javascript, jQuery are the main languages and frameworks I use to build sites, but I am constantly expanding. I love programming and I am currently pursuiting a Computer Science degree.\n          For more information please contact me below.\n          or send me an email and we can discuss your project."
+    },
+    "highlightProjects": {
+      "header": "Portfolio",
+      "projects": [
+        {
+          "id": 1,
+          "title": "Project Planner",
+          "description": "This app is a new take on the old to-do-list type applications. But this is the next level. I used node, express, handlebars and mongo to create this free interactive planning tool. Version 1.0.0 used bootstrap as a framework for the css. The remote database is stored on M-lab and the app is hosted on Heroku. Using passport.js and other packages I created secured pages that have access control. There are many more inprovemnts planned for V2.0.",
+          "url": "https://github.com/Daver2910/project_planner",
+          "img": "ProjectPlanner.png"
+        },
+        {
+          "id": 2,
+          "title": "Effective Thesis",
+          "description": "Effective Thesis is a volunteer project to help student choose thesis topics that will impact more than just their studies. Based in Prague, CZ, they engaged me to improve the frontend of the website to provide a more user friendly experience. I started by making the website mobile responsive and applying bootstrap 4 to the front end. The website is built on Django, a Python framework. so it was a great experience working with the django framework.",
+          "url": "http://effectivethesis.com/",
+          "img": "effectiveThese.png"
+        },
+        {
+          "id": 3,
+          "title": "Simple Profolio Template",
+          "description": "This portfolio page started as a practice project. It is based on the multiple bootstrap templates available on the internet. Its built totally on HTML5 and Bootstrap 4 and uses some basic jQuery to power the animation and actions. All the images were found on upsplash.",
+          "url": "https://daver2910.github.io/PortfolioThemeTemplate/",
+          "img": "template01.png"
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "header": "WEBSITES",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project Planner",
+        "details": "This app is a new take on the old to-do-list type applications. But this is the next level. I used node, express, handlebars and mongo to create this free interactive planning tool. Version 1.0.0 used bootstrap as a framework for the css. The remote database is stored on M-lab and the app is hosted on Heroku. Using passport.js and other packages I created secured pages that have access control. There are many more inprovemnts planned for V2.0.",
+        "github": "Daver2910/project_planner",
+        "url": "https://github.com/Daver2910/project_planner",
+        "img": "ProjectPlanner.png"
+      },
+      {
+        "id": 2,
+        "title": "Effective Thesis",
+        "details": "Effective Thesis is a volunteer project to help student choose thesis topics that will impact more than just their studies. Based in Prague, CZ, they engaged me to improve the frontend of the website to provide a more user friendly experience. I started by making the website mobile responsive and applying bootstrap 4 to the front end. The website is built on Django, a Python framework. so it was a great experience working with the django framework.",
+        "github": "ea-czech-republic/efektivnialtruismus.cz",
+        "url": "http://effectivethesis.com/",
+        "img": "effectiveThese.png"
+      },
+      {
+        "id": 3,
+        "title": "Simple Profolio Template",
+        "details": "This portfolio page started as a practice project. It is based on the multiple bootstrap templates available on the internet. Its built totally on HTML5 and Bootstrap 4 and uses some basic jQuery to power the animation and actions. All the images were found on upsplash.",
+        "github": "Daver2910/PortfolioThemeTemplate",
+        "url": "https://daver2910.github.io/PortfolioThemeTemplate/",
+        "img": "template01.png"
+      },
+      {
+        "id": 4,
+        "title": "david-redmond.com",
+        "details": "I know you are family with this site, I built it with an expressjs backend and EJS template engine. All the Javascript and SASS/CSS was written by me. There is some simple bootstrap classes used and I made use of the Google maps API. The contact forms are emailed directly to my email accunt using nodemailer.js Feel free to look at the code.",
+        "github": "Daver2910/express.js-Portfolio",
+        "url": "https://www.david-redmond.com",
+        "img": "site-screenshot.png"
+      },
+      {
+        "id": 5,
+        "title": "Wikipedia Search Tool",
+        "details": "Free Code Camp asks users to build basic apps from different APIs. This is a single pages site used to take a search term the user enters and then search wikipedia, and presents the results on reloaded page. The user can also get a random article to read as they wish. the google fonts and basic colors give the app a futuristic or scientific feel.",
+        "github": "/Daver2910/wikipedia_search_tool",
+        "url": "https://daver2910.github.io/wikipedia_search_tool/",
+        "img": "wikipedia.png"
+      },
+      {
+        "id": 3,
+        "title": "Weather Application",
+        "details": "This is another zipline project for Free Code Camp to show the use of Javascript APIs, and DOM manipulation, The app access the users browser location and then makes a call to the OpenWeather.com API. theis then collects the weather data from the users location and returns it to the screen as the designer presents it.",
+        "github": "Daver2910",
+        "url": "https://codepen.io/DavidRedmond/full/dmrVLm/",
+        "img": "weatherApp.png"
+      }
+    ]
+  },
+  "contact": {
+    "tagLine": "WANT A BETTER RELATIONSHIP? ADD ME BELOW...",
+    "socialMedia": [
+      {
+        "name": "facebook",
+        "link": "https://www.facebook.com/daithi12",
+        "class": "--facebook",
+        "icon": "fa-facebook-f"
+      },
+      {
+        "name": "Gmail",
+        "link": "mailto:mail.davidredmond@gmail.com",
+        "class": "--gmail",
+        "icon": "fa-envelope"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/Daver2910",
+        "class": "--github",
+        "icon": "fa-github"
+      },
+      {
+        "name": "CodePen",
+        "link": "https://codepen.io/DavidRedmond/",
+        "class": "--codepen",
+        "icon": "fa-codepen"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/dredmond12345678/",
+        "class": "--linkedin",
+        "icon": "fa-linkedin"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Dredmond29",
+        "class": "--twitter",
+        "icon": "fa-twitter"
+      },
+      {
+        "name": "Free Code Camp",
+        "link": "https://www.freecodecamp.org/daver2910",
+        "class": "--ffc",
+        "icon": "fa-free-code-camp"
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Articles",
+      "text": [
+        "Here are list of some of the articles I wrote which come directly from my notes as I am learning to code in all the many languages and frameworks. I try to make this as clear as possible but generally it's all from my own purposes.",
+        "If you have any questions please send me an email or write to me on social media. I will try my best to get back to you and help you as many others have helped me.",
+        "Good luck coding! Never give up, you will find the answer :)"
+      ]
+    },
+    "body": {
+      "noPosts": "There are no Posts at the moment."
+    }
+  }
+}
